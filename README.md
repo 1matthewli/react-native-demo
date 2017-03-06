@@ -3,6 +3,13 @@ Demo app for react native, following instructions on: https://facebook.github.io
 
 ## How to Run
 
+To install/build:
+
 - `git clone https://github.com/1matthewli/react-native-demo.git`
 - `cd react-native-demo && npm install`
 - `react-native run-ios`
+
+afterwards:
+
+-`npm start`
+open simulator
