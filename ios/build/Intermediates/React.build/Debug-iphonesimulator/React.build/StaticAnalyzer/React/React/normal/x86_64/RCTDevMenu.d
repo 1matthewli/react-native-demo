@@ -1,0 +1,22 @@
+dependencies: \
+  /Users/Matthew/react-native-demo/node_modules/react-native/React/Modules/RCTDevMenu.mm \
+  /Users/Matthew/react-native-demo/node_modules/react-native/React/Modules/RCTDevMenu.h \
+  /Users/Matthew/react-native-demo/node_modules/react-native/React/Base/RCTBridge.h \
+  /Users/Matthew/react-native-demo/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
+  /Users/Matthew/react-native-demo/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
+  /Users/Matthew/react-native-demo/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/Matthew/react-native-demo/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /Users/Matthew/react-native-demo/node_modules/react-native/React/Base/RCTFrameUpdate.h \
+  /Users/Matthew/react-native-demo/node_modules/react-native/React/Base/RCTInvalidating.h \
+  /Users/Matthew/react-native-demo/ios/Build/Products/Debug-iphonesimulator/include/jschelpers/JavaScriptCore.h \
+  /Users/Matthew/react-native-demo/ios/Build/Products/Debug-iphonesimulator/include/jschelpers/JSCWrapper.h \
+  /Users/Matthew/react-native-demo/node_modules/react-native/React/Modules/JSCSamplingProfiler.h \
+  /Users/Matthew/react-native-demo/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/Matthew/react-native-demo/node_modules/react-native/React/Base/RCTBridge+Private.h \
+  /Users/Matthew/react-native-demo/node_modules/react-native/React/Base/RCTEventDispatcher.h \
+  /Users/Matthew/react-native-demo/node_modules/react-native/React/Base/RCTKeyCommands.h \
+  /Users/Matthew/react-native-demo/node_modules/react-native/React/Base/RCTLog.h \
+  /Users/Matthew/react-native-demo/node_modules/react-native/React/Profiler/RCTProfile.h \
+  /Users/Matthew/react-native-demo/node_modules/react-native/React/Base/RCTRootView.h \
+  /Users/Matthew/react-native-demo/node_modules/react-native/React/Base/RCTUtils.h \
+  /Users/Matthew/react-native-demo/node_modules/react-native/React/Base/RCTWebSocketObserverProtocol.h
