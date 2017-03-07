@@ -44,8 +44,6 @@ export default class AwesomeProject extends Component {
         </View>
       </View>
     );
-
-  
   }
 }
 
