@@ -11,5 +11,5 @@ To install/build:
 
 afterwards:
 
--`npm start`
-open simulator
+- `npm start`
+- open simulator

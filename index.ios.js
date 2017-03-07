@@ -6,33 +6,45 @@
 
 import React, { Component } from 'react';
 import BlinkApp from './components/blink.js';
+import FeedVideo from './components/FeedVideo.js';
+
 import {
   AppRegistry,
   StyleSheet,
   Text,
   View,
-  Image
+  Image,
+  ScrollView
 } from 'react-native';
 
 export default class AwesomeProject extends Component {
+  videoInfo = [['lol','another one','ye'], ['lo2l','anoth123er one','123ye'], ['lo2l','anoth123er one','123ye'], ['noooooooo']];
+
   render() {
 
     let pic = {
       uri: 'https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg'
     };
     return (
-      <View style={{flex: 1}}>
+      <ScrollView>
         <View style={{flex: 1, backgroundColor: 'powderblue'}}>
           <Text style={styles.welcome}>
-            Welcome to React Native!
+            Welcome to React Natives!
           </Text>
           <Text style={styles.instructions}>
            To get started, edit index.ios.js
           </Text>
         </View>
 
-        <View style={{flex: 2, backgroundColor: 'skyblue'}}>
-          <Image source={pic} style={{width: 193, height: 110}}/>
+        <View style={{flex: 4, backgroundColor: 'skyblue'}}>
+          {this.videoInfo.map((tags,i) => 
+            <FeedVideo 
+              pic={pic}
+              key={i} 
+              label={'Post ' + (i+1) + ':'} 
+              tags={tags}
+            />
+          )}
         </View>
 
         <View style={{flex: 3, backgroundColor: 'steelblue'}}>
@@ -42,7 +54,8 @@ export default class AwesomeProject extends Component {
           </Text>
           <BlinkApp/>
         </View>
-      </View>
+      </ScrollView>
+
     );
   }
 }
