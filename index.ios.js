@@ -7,6 +7,7 @@
 import React, { Component } from 'react';
 import BlinkApp from './components/blink.js';
 import FeedVideo from './components/FeedVideo.js';
+import VideoList from './components/VideoList.js'
 
 import {
   AppRegistry,
@@ -14,10 +15,16 @@ import {
   Text,
   View,
   Image,
-  ScrollView
+  ScrollView,
+  SegmentedControlIOS
 } from 'react-native';
 
 export default class AwesomeProject extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {selectedIndex: 0};
+  }
+
   videoInfo = [['lol','another one','ye'], ['lo2l','anoth123er one','123ye'], ['lo2l','anoth123er one','123ye'], ['noooooooo']];
 
   render() {
@@ -27,9 +34,9 @@ export default class AwesomeProject extends Component {
     };
     return (
       <ScrollView>
-        <View style={{flex: 1, backgroundColor: 'powderblue'}}>
+        <View style={{flex: 1, backgroundColor: 'white'}}>
           <Text style={styles.welcome}>
-            Welcome to React Natives!
+            Welcome to React Native!
           </Text>
           <Text style={styles.instructions}>
            To get started, edit index.ios.js
@@ -43,6 +50,7 @@ export default class AwesomeProject extends Component {
               key={i} 
               label={'Post ' + (i+1) + ':'} 
               tags={tags}
+              styles={styles.video}
             />
           )}
         </View>
@@ -54,6 +62,14 @@ export default class AwesomeProject extends Component {
           </Text>
           <BlinkApp/>
         </View>
+        <VideoList/>
+        <SegmentedControlIOS
+          values={['One', 'Two']}
+          selectedIndex={this.state.selectedIndex}
+          onChange={(event) => {
+            this.setState({selectedIndex: event.nativeEvent.selectedSegmentIndex});
+          }}
+        />
       </ScrollView>
 
     );
@@ -67,10 +83,13 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
   },
+  video: {
+    padding: 10,
+  },
   welcome: {
     fontSize: 20,
     textAlign: 'center',
-    margin: 10,
+    margin: 20,
   },
   instructions: {
     textAlign: 'center',

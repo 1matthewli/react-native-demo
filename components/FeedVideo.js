@@ -16,7 +16,7 @@ export default class FeedVideo extends Component {
     let formatTags = this.props.tags.map(tag => '#' + tag);
     return (
       <View>
-        <Image source={this.props.pic} style={{width: 193, height: 110}}/>
+        <Image source={this.props.pic} style={{width: '100%', height: 200}}/>
         <Text>{display}</Text>
         <Text>{this.props.label + ' ' + formatTags.join()}</Text>
         <Button
